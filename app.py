@@ -4,9 +4,11 @@ from flask_restful import Api, Resource
 app = Flask(__name__)
 api = Api(app)
 
+
 class Users(Resource):
     def get(self):
         return {"message": "user-1"}
+
 
 class User(Resource):
     def post(self):
